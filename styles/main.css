@@ -1,0 +1,164 @@
+/*-------------------
+-------fonts---------
+-------------------*/
+
+@font-face {
+  font-family: 'Bebas Neue Cyrillic';
+  src: url('../fonts/BebasNeueCyrillic.eot');
+  src: url('../fonts/BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+      url('../fonts/BebasNeueCyrillic.woff') format('woff'),
+      url('../fonts/BebasNeueCyrillic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('../fonts/Candara.eot');
+  src: url('../fonts/Candara.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Candara.woff2') format('woff2'),
+      url('../fonts/Candara.woff') format('woff'),
+      url('../fonts/Candara.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('../fonts/Candara-Bold.eot');
+  src: url('../fonts/Candara-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Candara-Bold.woff2') format('woff2'),
+      url('../fonts/Candara-Bold.woff') format('woff'),
+      url('../fonts/Candara-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*-------------------
+--------reset--------
+-------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------*/
+
+:root {
+  --bebas-font: "Bebas Neue Cyrillic", sans-serif;
+  --candara-font: "Candara", sans-serif;
+  --text-color-white: #FFFFFF;
+  --text-color-dark: #5A5A5A;
+  --text-color-light: #EEEEEE;
+  --text-color-gold: #ECB647;
+  --h2-color: #141414;
+  --h3-color: #2F2F2F;
+  --bg-color: rgba(24,24,24,0.95);
+  /* --color: #286A1D;
+  --radius: 5px;
+  --card-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25); */
+
+  scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: var(--candara-font);
+  font-weight: 400;
+  color: var(--text-color-dark);
+}
+
+p {
+  font-size: 2.2rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--bebas-font);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6.6rem;
+  color: var(--text-color-white);
+}
+
+h2 {
+  font-size: 5rem;
+  color: var(--h2-color);
+}
+
+h3 {
+  font-size: 3.2rem;
+  color: var(--h3-color);
+}
+
+.btn {
+  height: 60px;
+  padding: 0 46px;
+  font-family: var(--candara-font);
+  color: var(--text-color-white);
+  font-weight: 700; 
+  box-shadow: inset 0 3px 1.5px 0 rgba(255, 255, 255, 0.4), 
+              inset 0 -3px 1.5px 0 rgba(0, 0, 0, 0.5), 
+              inset 3px 0 1.5px 0 rgba(255, 255, 255, 0.25), 
+              inset -3px 0 1.5px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(78deg, rgba(183,129,18,1) 0%, rgba(221,167,56,1) 14%, rgba(217,163,52,1) 38%, rgba(195,141,30,1) 50%, rgba(181,127,16,1) 67%, rgba(172,118,7,1) 80%, rgba(193,139,28,1) 100%);
+}
