@@ -4,8 +4,817 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
-    <button class="btn">Посмотреть продукцию</button>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__logo">
+          <a href="#">
+            <img src="./img/logo.png" alt='ООО "БелБанка"'>
+          </a>
+        </div>
+        <div class="header__controls">
+          <nav class="header__navigation">
+            <ul class="header__nav-list">
+              <li>
+                <a href="#catalog" class="header__nav-link">Каталог продукции</a>
+              </li>
+              <li>
+                <a href="#about" class="header__nav-link">О компании</a>
+              </li>
+              <li>
+                <a href="#contacts" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__lang-wrapper">
+            <button class="header__lang header__lang--active">RU</button>
+            <span> / </span>
+            <button class="header__lang">EN</button>
+          </div>
+          <div class="header__phone">
+            <div class="header__phone-item">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_iiii_313_832)">
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="url(#paint0_linear_313_832)"/>
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="url(#paint1_radial_313_832)" fill-opacity="0.2"/>
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_iiii_313_832" x="3.25" y="3.25" width="23.5" height="23.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_313_832" result="effect2_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_313_832" result="effect3_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_313_832" result="effect4_innerShadow_313_832"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_313_832" x1="4.83173" y1="26.25" x2="26.8611" y2="25.3668" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_313_832" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.74039 -10.3125) rotate(68.5297) scale(23.1704 78.3546)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <a class="header__phone-num" href="tel:+375159224849">+375(29)811-23-00</a>
+            </div>
+            <div class="header__phone-item">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_iiii_313_832)">
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="url(#paint0_linear_313_832)"/>
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="url(#paint1_radial_313_832)" fill-opacity="0.2"/>
+                  <path d="M8.275 13.4875C10.075 17.025 12.975 19.9125 16.5125 21.725L19.2625 18.975C19.6 18.6375 20.1 18.525 20.5375 18.675C21.9375 19.1375 23.45 19.3875 25 19.3875C25.6875 19.3875 26.25 19.95 26.25 20.6375V25C26.25 25.6875 25.6875 26.25 25 26.25C13.2625 26.25 3.75 16.7375 3.75 5C3.75 4.3125 4.3125 3.75 5 3.75H9.375C10.0625 3.75 10.625 4.3125 10.625 5C10.625 6.5625 10.875 8.0625 11.3375 9.4625C11.475 9.9 11.375 10.3875 11.025 10.7375L8.275 13.4875Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_iiii_313_832" x="3.25" y="3.25" width="23.5" height="23.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_313_832" result="effect2_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_313_832" result="effect3_innerShadow_313_832"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_313_832" result="effect4_innerShadow_313_832"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_313_832" x1="4.83173" y1="26.25" x2="26.8611" y2="25.3668" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_313_832" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.74039 -10.3125) rotate(68.5297) scale(23.1704 78.3546)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <a class="header__phone-num" href="tel:+375296686419">+375(212)62-61-30 </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="burger-btn">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1C0 0.447716 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.66667C24 2.21895 23.5523 2.66667 23 2.66667H1C0.447716 2.66667 0 2.21895 0 1.66667V1ZM0 7.66667C0 7.11438 0.447715 6.66667 1 6.66667H23C23.5523 6.66667 24 7.11438 24 7.66667V8.33333C24 8.88562 23.5523 9.33333 23 9.33333H1C0.447716 9.33333 0 8.88562 0 8.33333V7.66667ZM0 14.3333C0 13.781 0.447715 13.3333 1 13.3333H23C23.5523 13.3333 24 13.781 24 14.3333V15C24 15.5523 23.5523 16 23 16H1C0.447716 16 0 15.5523 0 15V14.3333Z" fill="white"/>
+          </svg>              
+        </div>
+        <div class="burger">
+          <div class="burger__overlay"></div>
+          <div class="burger-menu">
+            <div class="burger-menu__close-btn">
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.17851 0.707107C3.56904 0.316583 4.2022 0.316583 4.59273 0.707107L20.1491 16.2635C20.5396 16.654 20.5396 17.2871 20.1491 17.6777L19.6777 18.1491C19.2871 18.5396 18.654 18.5396 18.2635 18.1491L2.70711 2.59273C2.31658 2.2022 2.31658 1.56904 2.70711 1.17851L3.17851 0.707107Z" fill="white"/>
+                <path d="M19.6777 0.707107C19.2872 0.316583 18.654 0.316583 18.2635 0.707107L2.70713 16.2635C2.3166 16.654 2.3166 17.2871 2.70713 17.6777L3.17853 18.1491C3.56905 18.5396 4.20222 18.5396 4.59274 18.1491L20.1491 2.59273C20.5396 2.2022 20.5396 1.56904 20.1491 1.17851L19.6777 0.707107Z" fill="white"/>
+              </svg>                
+            </div>
+            <div class="header__phone">
+              <div class="header__phone-wrapper">
+                <a class="header__phone-num" href="tel:+375159224849">+375 (15) 922–48–49</a>
+                <a class="header__phone-num" href="tel:+375296686419">+375 (29) 668–64–19</a>
+              </div>
+              <button class="header__call-btn btn-call">Заказать звонок</button>
+            </div>
+            <nav>
+              <ul class="burger__nav-list">
+                <li>
+                  <a href="#about" class="burger__nav-link">О компании</a>
+                </li>
+                <li>
+                  <a href="#services" class="burger__nav-link">Наши услуги</a>
+                </li>
+                <li>
+                  <a href="#monuments" class="burger__nav-link">Варианты памятников</a>
+                </li>
+                <li>
+                  <a href="#benefits" class="burger__nav-link">Преимущества</a>
+                </li>
+                <li>
+                  <a href="#stages" class="burger__nav-link">Как мы работаем</a>
+                </li>
+                <li>
+                  <a href="#works" class="burger__nav-link">Наши работы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div> -->
+        
+      </div>
+    </header>
+    <main>
+      <section class="banner" style="background-image: url(../img/banner-bg.jpg);">
+        <div class="container">
+          <div class="banner__wrapper">
+            <div class="banner__content">
+              <div class="banner__title-wrapper">
+                <h1>Производство упаковки из жести для различных категорий продуктов</h1>
+              </div>
+              <div>
+                <a href="#" class="btn">Посмотреть продукцию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="products__img-wrapper">
+          <img src="./img/products-img.jpg" alt="">
+        </div>
+        <div class="products__text-wrapper">
+          <h2>Производим упаковку для:</h2>
+          <div class="products__descr">
+            <div class="products__desct-item">
+              <h3>Черной икры</h3>
+              <p>Жестяные, с вакуумным закрытием банки различных размеров</p>
+            </div>
+            <div class="products__desct-item">
+              <h3>Подарочной и сувенирной продукции</h3>
+              <p>Банки, с плотно закрывающимися крышками, для любой Вашей продукции</p>
+            </div>
+            <div class="products__btn">
+              <a href="#" class="btn">Перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits" style="background-image: url(../img/benefits-bg.jpg);">
+        <div class="container">
+          <div class="benefits__wrapper">
+            <div class="benefits__item">
+              <h2>Вот почему наша продукция является идеальным решением:</h2>
+              <div class="benefits__cells">
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Превосходное качество</h3>
+                  <p>Мы используем только высококачественные материалы, чтобы гарантировать долговечность и надежность нашей продукции. Они защищают содержимое от повреждений, сохраняют свежесть и аромат продуктов.</p>
+                </div>
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Многообразие размеров и форм</h3>
+                  <p>Мы предлагаем широкий выбор размеров и форм банок, чтобы удовлетворить любые потребности. Будь то небольшие баночки для сувениров или большие контейнеры для подарочных наборов, у нас есть оптимальное решение для каждого случая.</p>
+                </div>
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Индивидуальный дизайн</h3>
+                  <p>Мы предлагаем возможность создания индивидуального дизайна наших банок, чтобы они полностью соответствовали Вашему бренду или мероприятию. Вы можете добавить логотип, надписи, изображения и выбрать желаемую цветовую гамму.</p>
+                </div>
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Универсальность</h3>
+                  <p>Наши банки идеально подходят для упаковки широкого спектра продуктов, включая конфеты, печенье, чай, кофе, специи, сувениры, новогодние подарки и многое другое. Они также могут использоваться для организации сувенирных коллекций или предметов хранения.</p>
+                </div>
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Экологическая ответственность</h3>
+                  <p>Мы стремимся к устойчивому развитию и предлагаем банки, которые можно многократно использовать и перерабатывать. Это поможет вам укрепить вашу экологическую репутацию и привлечь экологически осознанных клиентов.</p>
+                </div>
+                <div class="benefits__cells-item">
+                  <div class="benefits__number"></div>
+                  <h3>Конкурентоспособные цены</h3>
+                  <p>Мы предлагаем гибкую ценовую политику и индивидуальные скидки для оптовых заказов. Мы не стоим на месте и в перспективе планируется установка новых линий для расширения производства упаковки из белой жести.</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefits__item">
+              <h2>наша компания прошла все необходимые сертификации</h2>
+              <div class="benefits__certificates">
+                <div class="benefits-swiper swiper1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/certificate1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/certificate4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__swiper-btns-wrapper">
+                  <div class="benefits__button-next">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_i_313_822)">
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint0_linear_313_822)"/>
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint1_radial_313_822)" fill-opacity="0.2"/>
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_i_313_822" x="8" y="8" width="35" height="36.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset dy="3"/>
+                          <feGaussianBlur stdDeviation="0.75"/>
+                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_822"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_313_822" x1="41.3173" y1="43" x2="7.04941" y2="41.6261" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#657073"/>
+                          <stop offset="0.099232" stop-color="#9EA1A1"/>
+                          <stop offset="0.384706" stop-color="#A3AAA9"/>
+                          <stop offset="0.481533" stop-color="#8A979A"/>
+                          <stop offset="0.783332" stop-color="#727D81"/>
+                          <stop offset="0.897573" stop-color="#848B8A"/>
+                          <stop offset="1" stop-color="#8E9192"/>
+                        </linearGradient>
+                        <radialGradient id="paint1_radial_313_822" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.9038 -13.875) rotate(111.47) scale(36.0428 121.885)">
+                          <stop stop-color="white"/>
+                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="benefits__button-prev">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_i_313_822)">
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint0_linear_313_822)"/>
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint1_radial_313_822)" fill-opacity="0.2"/>
+                        <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                      </g>
+                      <defs>
+                        <filter id="filter0_i_313_822" x="8" y="8" width="35" height="36.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset dy="3"/>
+                          <feGaussianBlur stdDeviation="0.75"/>
+                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_822"/>
+                        </filter>
+                        <linearGradient id="paint0_linear_313_822" x1="41.3173" y1="43" x2="7.04941" y2="41.6261" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#657073"/>
+                          <stop offset="0.099232" stop-color="#9EA1A1"/>
+                          <stop offset="0.384706" stop-color="#A3AAA9"/>
+                          <stop offset="0.481533" stop-color="#8A979A"/>
+                          <stop offset="0.783332" stop-color="#727D81"/>
+                          <stop offset="0.897573" stop-color="#848B8A"/>
+                          <stop offset="1" stop-color="#8E9192"/>
+                        </linearGradient>
+                        <radialGradient id="paint1_radial_313_822" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.9038 -13.875) rotate(111.47) scale(36.0428 121.885)">
+                          <stop stop-color="white"/>
+                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="test">
+        <div class="test__text-wrapper">
+          <h2>Протестируйте нашу продукцию <span>бесплатно!</span></h2>
+          <p>Вам нужен качественный продукт?<br>Получите образцы нашей продукции бесплатно, <br>и после испытаний Вы точно захотите работать с нами!</p>
+          <form action="" method="" class="test__form">
+            <input type="text" placeholder="Имя" class="input" />
+            <input type="text" placeholder="+375 (__) _______" class="input" />
+            <div class="checkbox">
+              <input name="personalData" id="personalData" type="checkbox" />
+              <div class="customCheckbox">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="url(#paint0_linear_313_1465)"/>
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="url(#paint1_radial_313_1465)" fill-opacity="0.2"/>
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="#ECB647" style="mix-blend-mode:hard-light"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_313_1465" x1="3.9002" y1="17.4175" x2="19.6689" y2="16.5882" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#657073"/>
+                      <stop offset="0.099232" stop-color="#9EA1A1"/>
+                      <stop offset="0.384706" stop-color="#A3AAA9"/>
+                      <stop offset="0.481533" stop-color="#8A979A"/>
+                      <stop offset="0.783332" stop-color="#727D81"/>
+                      <stop offset="0.897573" stop-color="#848B8A"/>
+                      <stop offset="1" stop-color="#8E9192"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_313_1465" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.55137 -2.55782) rotate(62.7104) scale(13.2557 53.6226)">
+                      <stop stop-color="white"/>
+                      <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <label for="personalData">Даю согласие на обработку персональных данных</label>
+            </div>
+            <div class="test__btn">
+              <button type="submit" class="btn">Заказать образцы</button>
+            </div>
+          </form>
+        </div>
+        <div class="test__img-wrapper">
+          <img src="./img/test-img.jpg" alt="">
+        </div>
+      </section>
+      <section class="clients" style="background-image: url(./img/clients-bg.jpg);">
+        <div class="container">
+          <div class="clients__wrapper">
+            <div class="clieants__header">
+              <h2>Уже работают с нами</h2>
+              <div class="clients__header-underline"></div>
+              <div class="clients__swiper-btns">
+                <div class="clients__button-prev">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_313_822)">
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint0_linear_313_822)"/>
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint1_radial_313_822)" fill-opacity="0.2"/>
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_i_313_822" x="8" y="8" width="35" height="36.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="3"/>
+                        <feGaussianBlur stdDeviation="0.75"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_822"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_313_822" x1="41.3173" y1="43" x2="7.04941" y2="41.6261" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#657073"/>
+                        <stop offset="0.099232" stop-color="#9EA1A1"/>
+                        <stop offset="0.384706" stop-color="#A3AAA9"/>
+                        <stop offset="0.481533" stop-color="#8A979A"/>
+                        <stop offset="0.783332" stop-color="#727D81"/>
+                        <stop offset="0.897573" stop-color="#848B8A"/>
+                        <stop offset="1" stop-color="#8E9192"/>
+                      </linearGradient>
+                      <radialGradient id="paint1_radial_313_822" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.9038 -13.875) rotate(111.47) scale(36.0428 121.885)">
+                        <stop stop-color="white"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="clients__button-next">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_313_822)">
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint0_linear_313_822)"/>
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="url(#paint1_radial_313_822)" fill-opacity="0.2"/>
+                      <path d="M8 23.2904V27.7096H34.5152L22.3624 39.8624L25.5 43L43 25.5L25.5 8L22.3624 11.1376L34.5152 23.2904H8Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_i_313_822" x="8" y="8" width="35" height="36.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="3"/>
+                        <feGaussianBlur stdDeviation="0.75"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_822"/>
+                      </filter>
+                      <linearGradient id="paint0_linear_313_822" x1="41.3173" y1="43" x2="7.04941" y2="41.6261" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#657073"/>
+                        <stop offset="0.099232" stop-color="#9EA1A1"/>
+                        <stop offset="0.384706" stop-color="#A3AAA9"/>
+                        <stop offset="0.481533" stop-color="#8A979A"/>
+                        <stop offset="0.783332" stop-color="#727D81"/>
+                        <stop offset="0.897573" stop-color="#848B8A"/>
+                        <stop offset="1" stop-color="#8E9192"/>
+                      </linearGradient>
+                      <radialGradient id="paint1_radial_313_822" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(39.9038 -13.875) rotate(111.47) scale(36.0428 121.885)">
+                        <stop stop-color="white"/>
+                        <stop offset="1" stop-color="white" stop-opacity="0"/>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p>На сегодняшний день основными заказчиками компании «БелБанка» являются крупнейшие производители икры на территории Российской Федерации. <br>А также крупные компании по всему миру </p>
+            <div class="clients-swiper swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <div class="clients__img-wrapper">
+                      <img src="./img/c1.jpg" alt="">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="clients__img-wrapper">
+                      <img src="./img/c2.jpg" alt="">
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="clients__img-wrapper">
+                      <img src="./img/c3.jpg" alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__img-wrapper">
+                    <img src="./img/c4.jpg" alt="">
+                  </div>
+                  <div class="clients__img-wrapper">
+                    <img src="./img/c5.jpg" alt="">
+                  </div>
+                  <div class="clients__img-wrapper">
+                    <img src="./img/c6.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="questions__img-wrapper">
+          <img src="./img/questions-img.jpg" alt="">
+        </div>
+        <div class="questions__text-wrapper">
+          <h2>Остались вопросы?</h2>
+          <p>Напишите нам!</p>
+          <form action="" method="" class="questions__form">
+            <input type="text" placeholder="Имя" class="input" />
+            <input type="text" placeholder="+375 (__) _______" class="input" />
+            <textarea placeholder="Ваш вопрос" class="textarea"></textarea>
+            <div class="checkbox">
+              <input name="personalData" id="personalData" type="checkbox" />
+              <div class="customCheckbox">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="url(#paint0_linear_313_1465)"/>
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="url(#paint1_radial_313_1465)" fill-opacity="0.2"/>
+                  <path d="M8.24917 14.8233L4.42667 11.0008L3.125 12.2933L8.24917 17.4175L19.2492 6.4175L17.9567 5.125L8.24917 14.8233Z" fill="#ECB647" style="mix-blend-mode:hard-light"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_313_1465" x1="3.9002" y1="17.4175" x2="19.6689" y2="16.5882" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#657073"/>
+                      <stop offset="0.099232" stop-color="#9EA1A1"/>
+                      <stop offset="0.384706" stop-color="#A3AAA9"/>
+                      <stop offset="0.481533" stop-color="#8A979A"/>
+                      <stop offset="0.783332" stop-color="#727D81"/>
+                      <stop offset="0.897573" stop-color="#848B8A"/>
+                      <stop offset="1" stop-color="#8E9192"/>
+                    </linearGradient>
+                    <radialGradient id="paint1_radial_313_1465" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.55137 -2.55782) rotate(62.7104) scale(13.2557 53.6226)">
+                      <stop stop-color="white"/>
+                      <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <label for="personalData">Даю согласие на обработку персональных данных</label>
+            </div>
+            <div class="questions__btn">
+              <button type="submit" class="btn">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__info-wrapper">
+          <h2>Контакты</h2>
+          <div class="contacts__text-wrapper">
+            <div class="contacts__info-item">
+              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_iiii_313_647)">
+                  <path d="M8.275 13.9875C10.075 17.525 12.975 20.4125 16.5125 22.225L19.2625 19.475C19.6 19.1375 20.1 19.025 20.5375 19.175C21.9375 19.6375 23.45 19.8875 25 19.8875C25.6875 19.8875 26.25 20.45 26.25 21.1375V25.5C26.25 26.1875 25.6875 26.75 25 26.75C13.2625 26.75 3.75 17.2375 3.75 5.5C3.75 4.8125 4.3125 4.25 5 4.25H9.375C10.0625 4.25 10.625 4.8125 10.625 5.5C10.625 7.0625 10.875 8.5625 11.3375 9.9625C11.475 10.4 11.375 10.8875 11.025 11.2375L8.275 13.9875Z" fill="url(#paint0_linear_313_647)"/>
+                  <path d="M8.275 13.9875C10.075 17.525 12.975 20.4125 16.5125 22.225L19.2625 19.475C19.6 19.1375 20.1 19.025 20.5375 19.175C21.9375 19.6375 23.45 19.8875 25 19.8875C25.6875 19.8875 26.25 20.45 26.25 21.1375V25.5C26.25 26.1875 25.6875 26.75 25 26.75C13.2625 26.75 3.75 17.2375 3.75 5.5C3.75 4.8125 4.3125 4.25 5 4.25H9.375C10.0625 4.25 10.625 4.8125 10.625 5.5C10.625 7.0625 10.875 8.5625 11.3375 9.9625C11.475 10.4 11.375 10.8875 11.025 11.2375L8.275 13.9875Z" fill="url(#paint1_radial_313_647)" fill-opacity="0.2"/>
+                  <path d="M8.275 13.9875C10.075 17.525 12.975 20.4125 16.5125 22.225L19.2625 19.475C19.6 19.1375 20.1 19.025 20.5375 19.175C21.9375 19.6375 23.45 19.8875 25 19.8875C25.6875 19.8875 26.25 20.45 26.25 21.1375V25.5C26.25 26.1875 25.6875 26.75 25 26.75C13.2625 26.75 3.75 17.2375 3.75 5.5C3.75 4.8125 4.3125 4.25 5 4.25H9.375C10.0625 4.25 10.625 4.8125 10.625 5.5C10.625 7.0625 10.875 8.5625 11.3375 9.9625C11.475 10.4 11.375 10.8875 11.025 11.2375L8.275 13.9875Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_iiii_313_647" x="3.25" y="3.75" width="23.5" height="23.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_647"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_313_647" result="effect2_innerShadow_313_647"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_313_647" result="effect3_innerShadow_313_647"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_313_647" result="effect4_innerShadow_313_647"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_313_647" x1="4.83173" y1="26.75" x2="26.8611" y2="25.8668" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_313_647" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.74039 -9.81251) rotate(68.5297) scale(23.1704 78.3546)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <div class="contacts__phone-wrapper">
+                <p>+375 (29) 811-23-00</p>
+                <p>+375 (212) 62-61-30</p>
+              </div>
+            </div>
+            <div class="contacts__info-item">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_iiii_313_653)">
+                  <path d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z" fill="url(#paint0_linear_313_653)"/>
+                  <path d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z" fill="url(#paint1_radial_313_653)" fill-opacity="0.2"/>
+                  <path d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_iiii_313_653" x="2" y="4.5" width="26" height="21" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_653"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_313_653" result="effect2_innerShadow_313_653"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_313_653" result="effect3_innerShadow_313_653"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_313_653" result="effect4_innerShadow_313_653"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_313_653" x1="3.70192" y1="25" x2="28.1569" y2="23.7744" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_313_653" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.71154 -7.50001) rotate(63.8195) scale(21.3578 83.9548)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>                
+              <div class="contacts__email-wrapper">
+                <p>ooobelbanka@mail.ru</p>
+              </div>
+            </div>
+            <div class="contacts__info-item">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_iiii_313_657)">
+                  <path d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 12.0788 17.7958 12.8737 17.2097 13.4597C16.6237 14.0458 15.8288 14.375 15 14.375Z" fill="url(#paint0_linear_313_657)"/>
+                  <path d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 12.0788 17.7958 12.8737 17.2097 13.4597C16.6237 14.0458 15.8288 14.375 15 14.375Z" fill="url(#paint1_radial_313_657)" fill-opacity="0.2"/>
+                  <path d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C14.1712 14.375 13.3763 14.0458 12.7903 13.4597C12.2042 12.8737 11.875 12.0788 11.875 11.25C11.875 10.4212 12.2042 9.62634 12.7903 9.04029C13.3763 8.45424 14.1712 8.125 15 8.125C15.8288 8.125 16.6237 8.45424 17.2097 9.04029C17.7958 9.62634 18.125 10.4212 18.125 11.25C18.125 12.0788 17.7958 12.8737 17.2097 13.4597C16.6237 14.0458 15.8288 14.375 15 14.375Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_iiii_313_657" x="5.75" y="2" width="18.5" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_313_657"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+                    <feBlend mode="normal" in2="effect1_innerShadow_313_657" result="effect2_innerShadow_313_657"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+                    <feBlend mode="normal" in2="effect2_innerShadow_313_657" result="effect3_innerShadow_313_657"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1"/>
+                    <feGaussianBlur stdDeviation="0.25"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="effect3_innerShadow_313_657" result="effect4_innerShadow_313_657"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_313_657" x1="7.09135" y1="27.5" x2="24.2393" y2="27.0187" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_313_657" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.79808 -13.125) rotate(74.6068) scale(24.8498 63.1375)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <p>210040, Республика Беларусь, <br>г. Витебск, ул. 1-я Журжевская д.19 к.1</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2274.028477240293!2d30.255769151178338!3d55.25270985019852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c575c5cf6ebfc3%3A0x9f98096faf6d83ff!2z0LogMSwg0YPQuy4gMS3RjyDQltGD0YDQttC10LLRgdC60LDRjyAxOSwg0JLQuNGC0LXQsdGB0LogMjEwMDQw!5e0!3m2!1sru!2sby!4v1691814222112!5m2!1sru!2sby" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <div class="footer__logo">
+              <img src="./img/footer-logo.png" alt="ООО БелБанка" />
+            </div>
+            <a href="#" class="footer__text">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__item">
+            <nav class="footer__navigation">
+              <ul class="footer__nav-list">
+                <li><a href="#" class="footer__nav-link">Каталог продукции</a></li>
+                <li><a href="#" class="footer__nav-link">О компании</a></li>
+                <li><a href="#" class="footer__nav-link">Контакты</a></li>
+              </ul>
+            </nav>
+            <p class="footer__text">Создание сайта: ArtCly.by</p>
+          </div>
+          <div class="footer__item">
+            <button class="footer__btn">Наверх
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_i_353_650)">
+                  <path d="M23.2904 42L27.7096 42L27.7096 15.4848L39.8624 27.6376L43 24.5L25.5 7L8 24.5L11.1376 27.6376L23.2904 15.4848L23.2904 42Z" fill="url(#paint0_linear_353_650)"/>
+                  <path d="M23.2904 42L27.7096 42L27.7096 15.4848L39.8624 27.6376L43 24.5L25.5 7L8 24.5L11.1376 27.6376L23.2904 15.4848L23.2904 42Z" fill="url(#paint1_radial_353_650)" fill-opacity="0.2"/>
+                  <path d="M23.2904 42L27.7096 42L27.7096 15.4848L39.8624 27.6376L43 24.5L25.5 7L8 24.5L11.1376 27.6376L23.2904 15.4848L23.2904 42Z" fill="#ECB647" style="mix-blend-mode:color"/>
+                </g>
+                <defs>
+                  <filter id="filter0_i_353_650" x="8" y="7" width="35" height="36.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="3"/>
+                    <feGaussianBlur stdDeviation="0.75"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_353_650"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_353_650" x1="43" y1="8.68269" x2="41.6261" y2="42.9506" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#657073"/>
+                    <stop offset="0.099232" stop-color="#9EA1A1"/>
+                    <stop offset="0.384706" stop-color="#A3AAA9"/>
+                    <stop offset="0.481533" stop-color="#8A979A"/>
+                    <stop offset="0.783332" stop-color="#727D81"/>
+                    <stop offset="0.897573" stop-color="#848B8A"/>
+                    <stop offset="1" stop-color="#8E9192"/>
+                  </linearGradient>
+                  <radialGradient id="paint1_radial_353_650" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-13.875 10.0962) rotate(21.4703) scale(36.0428 121.885)">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+              </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup-view popup">
+        <div class="popup-view__overlay popup__overlay"></div>
+        <div class="popup-view__close popup__close">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.10764 0.715836C1.49328 0.320491 2.12249 0.316583 2.51301 0.707107L24.2626 22.4567C24.6532 22.8473 24.6571 23.4843 24.2715 23.8797L23.8622 24.2993C23.4765 24.6947 22.8473 24.6986 22.4568 24.308L0.707148 2.55841C0.316624 2.16788 0.312667 1.53081 0.69831 1.13546L1.10764 0.715836Z" fill="#7C7C7C"/>
+            <path d="M23.8622 0.715836C23.4766 0.320491 22.8474 0.316583 22.4568 0.707107L0.707204 22.4567C0.31668 22.8473 0.312723 23.4843 0.698366 23.8797L1.1077 24.2993C1.49334 24.6947 2.12255 24.6986 2.51307 24.308L24.2627 2.55841C24.6532 2.16788 24.6572 1.53081 24.2715 1.13546L23.8622 0.715836Z" fill="#7C7C7C"/>
+          </svg>
+        </div>
+        <div class="popup-view__img-wrapper">
+          <img src="./img/footer-logo.png" class="popup-view__img">
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
