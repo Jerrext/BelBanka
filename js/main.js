@@ -4,6 +4,24 @@ const overlayView = document.querySelector(".popup-view__overlay")
 
 document.addEventListener("DOMContentLoaded", () => {
   const benefitsCells = document.querySelectorAll(".benefits__cells-item")
+  const catalog = document.querySelector(".catalog")
+  const header = document.querySelector(".header")
+  const catalogProducts = [...document.querySelectorAll(".catalog__product-btn")]
+
+  if (catalog) {
+    header.style.backgroundColor = "#28261F"
+    header.firstElementChild.classList.remove("header__border--hide")
+    // console.log(catalogProducts)
+    const btnWithLine = catalogProducts.find((item, index, array) => {
+      if (catalogProducts.length % 2 === 0) {
+        return index === array.length - 1
+      } else {
+        return index === array.length - 2
+      }
+    })
+
+    btnWithLine.classList.add("btn-line")
+  }
 
   benefitsCells.forEach((item, index) => {
     if (item.firstElementChild.nextElementSibling.textContent.length > 0) {
