@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const catalog = document.querySelector(".catalog")
   const about = document.querySelector(".about")
   const contacts = document.querySelector(".main-contacts")
+  const notFound = document.querySelector(".not-found")
   const header = document.querySelector(".header")
+  const footer = document.querySelector(".footer")
   const catalogProducts = [...document.querySelectorAll(".catalog__product-btn")]
   const aboutInfoItem = document.querySelector(".about__info-item")
 
@@ -26,6 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     btnWithLine && btnWithLine.classList.add("btn-line")
+  }
+
+  if (notFound) {
+    header.style.display = "none"
+    footer.style.display = "none"
+    document.body.style.backgroundColor = "#181818"
   }
 
   benefitsCells.forEach((item, index) => {
@@ -174,3 +182,11 @@ document.querySelectorAll(".benefits-swiper .swiper-slide").forEach(item => {
 })
 document.querySelector(".popup-view__close").addEventListener("click", () => setPopUpVisibility(false, popupView, popupViewImg, overlayView))
 overlayView.addEventListener("click", () => setPopUpVisibility(false, popupView, popupViewImg, overlayView))
+
+document.querySelector('.footer__btn').addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
