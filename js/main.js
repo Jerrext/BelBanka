@@ -5,13 +5,18 @@ const overlayView = document.querySelector(".popup-view__overlay")
 document.addEventListener("DOMContentLoaded", () => {
   const benefitsCells = document.querySelectorAll(".benefits__cells-item")
   const catalog = document.querySelector(".catalog")
+  const about = document.querySelector(".about")
+  const contacts = document.querySelector(".main-contacts")
   const header = document.querySelector(".header")
   const catalogProducts = [...document.querySelectorAll(".catalog__product-btn")]
+  const aboutInfoItem = document.querySelector(".about__info-item")
 
-  if (catalog) {
+  aboutInfoItem && aboutInfoItem.classList.add("main-wrapper")
+
+  if (catalog || about || contacts) {
     header.style.backgroundColor = "#28261F"
     header.firstElementChild.classList.remove("header__border--hide")
-    // console.log(catalogProducts)
+
     const btnWithLine = catalogProducts.find((item, index, array) => {
       if (catalogProducts.length % 2 === 0) {
         return index === array.length - 1
@@ -20,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
 
-    btnWithLine.classList.add("btn-line")
+    btnWithLine && btnWithLine.classList.add("btn-line")
   }
 
   benefitsCells.forEach((item, index) => {
@@ -30,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-var swiper = new Swiper(".swiper1", {
+var swiper1 = new Swiper(".swiper1", {
   slidesPerView: 4,
   spaceBetween: 30,
   // autoplay: {
@@ -57,7 +62,7 @@ var swiper = new Swiper(".swiper1", {
   // }
 });
 
-var swiper = new Swiper(".swiper2", {
+var swiper2 = new Swiper(".swiper2", {
   slidesPerView: 1,
   spaceBetween: 30,
   // autoplay: {
@@ -70,6 +75,33 @@ var swiper = new Swiper(".swiper2", {
   navigation: {
     nextEl: ".clients__button-next",
     prevEl: ".clients__button-prev",
+  },
+  // breakpoints: {
+  //   500: {
+  //     slidesPerView: 2,
+  //   },
+  //   700: {
+  //     slidesPerView: 3,
+  //     grid: {
+  //       rows: 2,
+  //     },
+  //   },
+  // }
+});
+
+var swiper3 = new Swiper(".swiper3", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  keyboard: {
+    enabled: true,
+  },
+  simulateTouch: false,
+  navigation: {
+    nextEl: ".production__button-next",
+    prevEl: ".production__button-prev",
   },
   // breakpoints: {
   //   500: {
@@ -122,6 +154,15 @@ const setPopUpVisibility = (visibility, window, wrapper, overlay) => {
     popUpClose(window, wrapper, overlay)
   }
 }
+
+document.querySelectorAll(".production__img-wrapper").forEach(item => {
+  item.addEventListener("click", () => {
+    const imgSrs = item.firstElementChild.src
+    const img = document.querySelector(".popup-view__img")
+    img.src = imgSrs
+    setPopUpVisibility(true, popupView, popupViewImg, overlayView)
+  })
+})
 
 document.querySelectorAll(".benefits-swiper .swiper-slide").forEach(item => {
   item.addEventListener("click", () => {
