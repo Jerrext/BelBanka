@@ -1,7 +1,3 @@
-const popupView = document.querySelector(".popup-view")
-const popupViewImg = document.querySelector(".popup-view__img")
-const overlayView = document.querySelector(".popup-view__overlay")
-
 document.addEventListener("DOMContentLoaded", () => {
   const benefitsCells = document.querySelectorAll(".benefits__cells-item")
   const catalog = document.querySelector(".catalog")
@@ -162,6 +158,35 @@ const setPopUpVisibility = (visibility, window, wrapper, overlay) => {
     popUpClose(window, wrapper, overlay)
   }
 }
+
+const popupThanks = document.querySelector(".popup-thanks")
+const popupThanksWrapper = document.querySelector(".popup-thanks__wrapper")
+const overlayThanks = document.querySelector(".popup-thanks__overlay")
+
+document.querySelectorAll(".submit-btn").forEach(item => {
+  item.addEventListener("click", () => setPopUpVisibility(true, popupThanks, popupThanksWrapper, overlayThanks))
+})
+
+document.querySelector(".popup-thanks__close").addEventListener("click", () => setPopUpVisibility(false, popupThanks, popupThanksWrapper, overlayThanks))
+overlayThanks.addEventListener("click", () => setPopUpVisibility(false, popupThanks, popupThanksWrapper, overlayThanks))
+
+//
+
+const popupApplication = document.querySelector(".popup-application")
+const popupApplicationWrapper = document.querySelector(".popup-application__wrapper")
+const overlayApplication = document.querySelector(".popup-application__overlay")
+
+document.querySelectorAll(".catalog__product-btn > .btn").forEach(item => {
+  item.addEventListener("click", () => setPopUpVisibility(true, popupApplication, popupApplicationWrapper, overlayApplication))
+})
+document.querySelector(".popup-application__close").addEventListener("click", () => setPopUpVisibility(false, popupApplication, popupApplicationWrapper, overlayApplication))
+overlayApplication.addEventListener("click", () => setPopUpVisibility(false, popupApplication, popupApplicationWrapper, overlayApplication))
+
+//
+
+const popupView = document.querySelector(".popup-view")
+const popupViewImg = document.querySelector(".popup-view__img")
+const overlayView = document.querySelector(".popup-view__overlay")
 
 document.querySelectorAll(".production__img-wrapper").forEach(item => {
   item.addEventListener("click", () => {

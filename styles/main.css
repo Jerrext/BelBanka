@@ -126,13 +126,14 @@ button {
   --h2-color: #141414;
   --h3-color: #2F2F2F;
   --bg-color: rgba(24,24,24,0.95);
+  --main-bg-color: #181818;
   --transition: 0.3s;
   /* --color: #286A1D;
   --radius: 5px;
   --card-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25); */
 
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 1vw;
   font-family: var(--candara-font);
   font-weight: 400;
   color: var(--text-color-dark);
@@ -142,8 +143,8 @@ body {
   position: relative;
 }
 
-p {
-  font-size: 2.2rem;
+p, li {
+  font-size: clamp(18px, 0.3125rem + 17px, 22px);
 }
 
 h1, h2, h3 {
@@ -153,17 +154,17 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 6.6rem;
+  font-size: clamp(30px, 2.29rem + 22px, 66px);
   color: var(--text-color-white);
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: clamp(24px, 1.667rem + 18px, 50px);
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: clamp(22px, 0.625rem + 20px, 32px);
   color: var(--h3-color);
 }
 
@@ -183,7 +184,7 @@ h3 {
   font-family: var(--candara-font);
   color: var(--text-color-white);
   font-weight: 700; 
-  font-size: 2rem;
+  font-size: 20px;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -223,7 +224,7 @@ h3 {
   border: 0;
   box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
   padding: 0 27px;
-  font-size: 20px;
+  font-size: clamp(16px, 0.26rem + 15px, 20px);
   font-family: var(--candara-font);
 }
 
@@ -235,7 +236,7 @@ h3 {
 
 .input::placeholder,
 .textarea::placeholder {
-  font-size: 20px;
+  font-size: clamp(16px, 0.26rem + 15px, 20px);
   font-family: var(--candara-font);
   font-weight: 400;
   color: #828282;
@@ -248,7 +249,7 @@ h3 {
 }
 
 .checkbox > label {
-  font-size: 18px;
+  font-size: clamp(14px, 0.31rem + 13px, 18px);
   color: #828282;
 }
 
@@ -359,7 +360,7 @@ h3 {
 .footer__nav-link {
   text-transform: uppercase;
   font-family: var(--candara-font);
-  font-size: 2rem;
+  font-size: 20px;
   color: var(--text-color-white);
 }
 
@@ -396,7 +397,7 @@ h3 {
 .header__phone-num {
   font-family: var(--bebas-font);
   font-weight: 400;
-  font-size: 32px;
+  font-size: clamp(18px, 0.938rem + 14px, 32px);
   color: var(--text-color-white);
   line-height: 1.2em;
 }
@@ -594,7 +595,7 @@ h3 {
   background-blend-mode: color, normal, normal;
   font-family: var(--bebas-cyrillic-font);
   font-weight: 400;
-  font-size: 120px;
+  font-size: clamp(70px, 3.1rem + 60px, 120px);
   line-height: 0.8em;
 }
 
@@ -605,7 +606,6 @@ h3 {
 
 .benefits__cells-item p {
   color: #EEEEEE;
-  font-size: 2.2rem;
   margin-top: 10px;
 }
 
@@ -965,7 +965,7 @@ h3 {
 }
 
 .contacts p {
-  font-size: 24px;
+  font-size: clamp(22px,0.13rem + 21.5px,24px);
 }
 
 .contacts__info-wrapper {
@@ -1019,6 +1019,7 @@ h3 {
 .contacts__phone-wrapper p {
   font-family: var(--candara-font);
   font-weight: 700;
+  font-size: clamp(24px,0.391rem + 22.5px,30px);
 }
 
 .contacts__map {
@@ -1034,7 +1035,7 @@ h3 {
 -------------------*/
 
 .footer {
-  background-color: #181818;
+  background-color: var(--main-bg-color);
 }
 
 .footer__wrapper {
@@ -1076,7 +1077,7 @@ h3 {
 }
 
 .footer__nav-link {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .footer__btn {
@@ -1084,7 +1085,7 @@ h3 {
   align-items: center;
   color: var(--text-color-white);
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 20px;
   margin-top: 3px;
 }
 
@@ -1096,7 +1097,7 @@ h3 {
   position: relative;
   padding: 0 10px;
   overflow: hidden;
-  background-color: #181818;
+  background-color: var(--main-bg-color);
   border-bottom: 1px solid var(--line-color);
 }
 
@@ -1124,7 +1125,6 @@ h3 {
 .catalog__products-wrapper p,
 .catalog__products-wrapper li {
   color: var(--text-color-light);
-  font-size: 2.2rem;
 }
 
 .catalog__products-wrapper li {
@@ -1226,7 +1226,7 @@ h3 {
   height: 10px;
   width: 50vw;
   border-top: 1px solid var(--line-color);
-  background-color: #181818;
+  background-color: var(--main-bg-color);
   left: calc(100% + 32px);
   top: 50%;
   height: 1300px;
@@ -1306,7 +1306,7 @@ h3 {
 -------------------*/
 
 .about {
-  background-color: #181818;
+  background-color: var(--main-bg-color);
   padding: 0 10px;
 }
 
@@ -1393,7 +1393,7 @@ h3 {
 
 .production {
   padding: 150px 10px;
-  background-color: #181818;
+  background-color: var(--main-bg-color);
 }
 
 .production h2 {
@@ -1472,7 +1472,7 @@ h3 {
 .main-contacts {
   position: relative;
   overflow: hidden;
-  background-color: #181818;
+  background-color: var(--main-bg-color);
 }
 
 .main-contacts h1 {
@@ -1567,7 +1567,7 @@ h3 {
 
 .main-contacts__item p {
   font-family: var(--bebas-cyrillic-font);
-  font-size: 32px;
+  font-size: clamp(26px,0.43rem + 24.5px,32px);
   text-transform: uppercase;
   color: var(--text-color-light);
 }
@@ -1635,6 +1635,10 @@ h3 {
   left: 0;
 }
 
+.popup * {
+  color: var(--text-color-white);
+}
+
 .popup__overlay {
   position: absolute;
   width: 100%;
@@ -1679,4 +1683,60 @@ h3 {
 
 .popup-view__close {
   opacity: 0.5;
+}
+
+.popup__wrapper {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+  left: 50%;
+  top: calc(50% + 30px);
+  transform: translate(-50%, -50%);
+  background-color: var(--main-bg-color);
+  width: 100%;
+  max-width: 1320px;
+  height: 830px;
+  z-index: 1;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.popup__wrapper::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../img/logo2.png");
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 156px;
+}
+
+.popup h2 {
+  font-size: clamp(30px, 2.29rem + 22px, 66px);
+}
+
+.popup h3,
+.popup p {
+  font-size: clamp(22px, 0.625rem + 20px, 32px);
+}
+
+.popup .btn {
+  padding: 0 93px;
+}
+
+.popup__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup-application__email {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
