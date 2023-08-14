@@ -34,14 +34,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   benefitsCells.forEach((item, index) => {
     if (item.firstElementChild.nextElementSibling.textContent.length > 0) {
-      item.firstElementChild.textContent = index + 1
+      item.firstElementChild.firstElementChild.textContent = index + 1
     }
   })
 })
 
 var swiper1 = new Swiper(".swiper1", {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 10,
   // autoplay: {
   //   delay: 5000,
   // },
@@ -53,22 +53,23 @@ var swiper1 = new Swiper(".swiper1", {
     nextEl: ".benefits__button-next",
     prevEl: ".benefits__button-prev",
   },
-  // breakpoints: {
-  //   500: {
-  //     slidesPerView: 2,
-  //   },
-  //   700: {
-  //     slidesPerView: 3,
-  //     grid: {
-  //       rows: 2,
-  //     },
-  //   },
-  // }
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    700: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  }
 });
 
 var swiper2 = new Swiper(".swiper2", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 10,
   // autoplay: {
   //   delay: 5000,
   // },
@@ -80,17 +81,6 @@ var swiper2 = new Swiper(".swiper2", {
     nextEl: ".clients__button-next",
     prevEl: ".clients__button-prev",
   },
-  // breakpoints: {
-  //   500: {
-  //     slidesPerView: 2,
-  //   },
-  //   700: {
-  //     slidesPerView: 3,
-  //     grid: {
-  //       rows: 2,
-  //     },
-  //   },
-  // }
 });
 
 var swiper3 = new Swiper(".swiper3", {
