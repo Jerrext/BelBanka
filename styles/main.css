@@ -1332,7 +1332,7 @@ p.footer__text {
 -------------------*/
 
 .secondary-questions {
-  padding: var(--vertical-padding-clamp) 0;
+  padding: var(--vertical-padding-clamp) 10px;
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
@@ -1602,8 +1602,8 @@ p.footer__text {
 }
 
 .main-contacts h1 {
-  margin-bottom: 100px;
-  padding: 0 80px;
+  margin-bottom: clamp(0px,9.8rem - 88.2px,100px);
+  padding: 0 clamp(20px,3.75rem + 8px,80px);
   position: relative;
 }
 
@@ -1633,7 +1633,7 @@ p.footer__text {
 }
 
 .main-contacts__wrapper {
-  margin-top: 223px;
+  margin-top: clamp(104px,8.934rem + 62.5px,223px);
 }
 
 .main-contacts__info {
@@ -1658,9 +1658,9 @@ p.footer__text {
 
 .main-contacts__text {
   /* height: 100%; */
-  padding: 100px 23px 100px 80px;
+  padding: clamp(60px,2.5rem + 52px,100px) 20px clamp(60px,2.5rem + 52px,100px) clamp(20px,3.75rem + 8px,80px);
   flex: 1;
-  max-width: 600px;
+  max-width: 610px;
   /* border-left: 1px solid var(--line-color); */
 }
 
@@ -1700,6 +1700,10 @@ p.footer__text {
 
 .main-contacts__item:first-child p {
   font-family: var(--bebas-font);
+}
+
+.main-contacts__container {
+  padding: 0 10px;
 }
 
 /*-------------------

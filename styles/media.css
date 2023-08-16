@@ -18,10 +18,6 @@
     gap: 20px;
   }
 
-  .banner__title-wrapper {
-    /* max-width: 500px; */
-  }
-
   .benefits__cells {
     grid-template-columns: 1fr 1fr;
   }
@@ -76,6 +72,18 @@
   .catalog__options-item {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .main-contacts__container {
+    padding: 0;
+  }
+
+  .main-contacts .container {
+    border: 0;
+  }
+
+  .main-contacts .container::after {
+    display: none;
   }
 }
 
@@ -362,6 +370,20 @@
   .contacts__wrapper {
     width: 100%;
     padding: 0 10px;
+  }
+
+  .main-contacts__info {
+    flex-direction: column;
+  }
+
+  .main-contacts__text {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .main-contacts__map {
+    max-width: 100%;
+    height: 370px;
   }
 }
 
