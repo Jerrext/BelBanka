@@ -5,6 +5,10 @@
     font-size: 16px;
   }
 
+  .header {
+    padding: 0;
+  }
+
   .header__logo {
     width: 170px;
   }
@@ -63,6 +67,15 @@
 
   .test__text-wrapper > h2 {
     width: 650px;
+  }
+
+  .header .container {
+    border: 0;
+  }
+
+  .catalog__options-item {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -227,7 +240,12 @@
   }
 
   .test__btn::before {
-    display: none;
+    right: unset;
+    left: calc(100% + 46px);
+  }
+
+  .test__form {
+    max-width: 100%;
   }
 
   .clients .container::before {
@@ -254,6 +272,48 @@
 
   .test__text-wrapper > h2 {
     width: unset;
+  }
+
+  .about__info-item {
+    flex-direction: column;
+  }
+  
+  .about {
+    padding: 0;
+  }
+
+  .about .container {
+    border: 0;
+  }
+
+  .about__info-img-wrapper {
+    flex: 0;
+    min-height: clamp(280px,22.94rem + 206.6px,436px);
+    max-height: clamp(280px,22.94rem + 206.6px,436px);
+  }
+
+  .about__info-item:nth-child(even) .about__info-text {
+    order: 0;
+  }
+
+  .about ~ .benefits > .container {
+    border: 0;
+  }
+
+  .secondary-questions__wrapper {
+    flex-direction: column;
+  }
+  
+  .questions__form {
+    max-width: 100%;
+  }
+
+  .secondary-questions__text {
+    max-width: 100%;
+  }
+
+  .secondary-questions__text h2 {
+    max-width: 450px;
   }
 }
 
@@ -334,6 +394,15 @@
   .benefits {
     background-image: none !important;
     background-color: var(--main-bg-color);
+    position: static;
+  }
+
+  .benefits::before {
+    display: none;
+  }
+
+  .about ~ .benefits {
+    background-color: #222222;
   }
 
   .benefits__cells {
@@ -392,6 +461,40 @@
 
   .btn {
     font-size: 18px;
+  }
+
+  .production-swiper,
+  .production__swiper-btns {
+    display: none;
+  }
+
+  .production-swiper2 {
+    display: block;
+  }
+
+  .catalog__products-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-line {
+    display: block;
+  }
+
+  .btn-line::before {
+    display: none;
+  }
+
+  .catalog {
+    padding: 0;
+  }
+
+  .catalog .container {
+    border: 0;
+  }
+
+  .catalog .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 

@@ -97,17 +97,24 @@ var swiper3 = new Swiper(".swiper3", {
     nextEl: ".production__button-next",
     prevEl: ".production__button-prev",
   },
-  // breakpoints: {
-  //   500: {
-  //     slidesPerView: 2,
-  //   },
-  //   700: {
-  //     slidesPerView: 3,
-  //     grid: {
-  //       rows: 2,
-  //     },
-  //   },
-  // }
+});
+
+var swiper4 = new Swiper(".swiper4", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  simulateTouch: false,
+  navigation: {
+    nextEl: ".production2__button-next",
+    prevEl: ".production2__button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+    },
+  }
 });
 
 
